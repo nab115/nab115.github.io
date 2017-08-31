@@ -1,3 +1,42 @@
+header{
+    text-align : left;
+    color: white;
+    display: inline;
+    background-color: #717171;
+}
 h1{
-    text-align : center;
+    color: white;
+}
+#contact{
+    color: white;
+}
+#mainImage{
+    border-radius: 50%;
+    position: fixed;
+    left: 40%;
+    top: 30px;
+}
+ul{
+    position: fixed;
+    top: 380px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #717171;
+}
+li{
+    display: inline;
+}
+#aboutContent{
+    position: fixed;
+    top: 450px;
+}
+#other{
+    position: fixed;
+    top: 450px;
+}
+#projectsContent{
+    position: fixed;
+    top: 450px;
 }

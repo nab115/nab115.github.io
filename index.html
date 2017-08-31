@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="main.css"/>
-<style>
-h1{
-    text-align: center;
-}
-
-</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <html>
-<body>
-<h1>Naran Babha</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <body>
+        <header>
+            <h1>Naran Babha</h1>
+            <div id="contact">Contact Information<br>Email: nab115@pitt.edu<br>LinkedIn: <a href="https://www.linkedin.com/in/naranbabha">https://www.linkedin.com/in/naranbabha<br><br><br><br><br><br><br><br><br><br><br><br><br><br></a></div>
+            <img src="images/Professional.jpg" id="mainImage">
+        </header>
+        <ul>
+            <li><button type="checkbox" class="btn btn-primary" data-toggle="collapse" onclick="close1()" href="#aboutContent">About</button></li>
+            <li><button type="checkbox" class="btn btn-primary" data-toggle="collapse" onclick="close2()" href="#projectsContent">Projects</button></li>
+            <li><button type="checkbox" class="btn btn-primary" data-toggle="collapse" onclick="close3()" href="#other">Other</button></li>
+        </ul>
+        <div class="collapse section" id="aboutContent">I love garbage plates</div>
+        <div class="collapse section" id="projectsContent">Here is the cool stuff I have done</div>
+        <div class="collapse section" id="other">Tits</div>
+    </body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </html>
