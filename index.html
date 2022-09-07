@@ -1,55 +1,33 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="main.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="packages/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
 <html>
     <body>
         <header>
             <div class="layer"></div>
-            <p id="welcome">Hi, I'm Naran Babha.</p>
-            <div id="contact" 
-                <i class="fa fa-envelope-o" aria-hidden="true" aria-setsize="100px"></i>nab115@pitt.edu
+            <p id="welcome">Naran Babha</p>
+            <div id="contact"> 
+                <a href="mailto:nbabha@gmail.com" style="text-decoration:none"><i id="e-mail" class="fa fa-envelope-square fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none"><i id="linkedin" class="fa fa-linkedin-square fa-lg"></i></a>
+                <a href="https://github.com/nab115/" style="text-decoration:none"><i id="github" class="fa fa-github-square fa-lg"></i></a>
             </div>
-            <div id="contact" 
-                <i class="fa fa-envelope-o" aria-hidden="true" aria-setsize="100px"></i>nab115@pitt.edu<br>
-                <a href="https://www.facebook.com/naran.babha" style="text-decoration:none"<i id="facebook" class="fa fa-facebook-square" aria-hidden="true" aria-setsize="100px"></i></a>
-                <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none"<i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" aria-setsize="100px"></i></a>
-                <a href="https://github.com/nab115/" style="text-decoration:none"<i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i></a>
-            </div>
-            <img src="images/Professional.jpg" id="mainImage" border="10px">
-        </header>
-        <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs">
                 <li class="active"><a class="tabButton" data-toggle="tab" href="#aboutContent">About Me</a></li>
                 <li><a class="tabButton" data-toggle="tab" href="#workContent">Work Experience</a></li>
                 <li><a class="tabButton" data-toggle="tab" href="#projectsContent">Projects</a></li>
                 <li><a class="tabButton" data-toggle="tab" href="#other">Courses</a></li>
-        </ul>
+            </ul>
+        </header>
         <div class="tab-content">
             <div class="tab-pane fade in active" id="aboutContent">
-                <h1 id="aboutTitle">About Naran</h1>
-                <p id="about">I am currently a student at the University of Pittsburgh, 
-                    majoring in Computer Engineering with minors in Math and Physics. I plan on graduating 
-                    in the spring of 2018, and aim to be part of an innovative and challenging tech company 
-                    upon graduation.<br>
-                    My primary interests are in artificial intelligence and robotics. This past summer, while 
-                    working as a technology intern at BNY Mellon in Pittsburgh, I also took an honors robotics 
-                    course which especially piqued my interest in the field.<br>
-                    Wanting to get more experience in robotics, I reached out to professors at the Robotics 
-                    Institute at Carnegie Mellon. I was able to obtain a research internship for the current Fall semester in Dr. Maxim
-                    Likhachev's research group, that designs and tests path planning algorithms.<br>
-                    My background is very unique - I began school as a Physics and Math major. However, after two years I decided that my double major was too theoretical,
-                    and I wanted to instead study something more practical. I experimented as an Economics and Math major for one semester, while taking my first Computer science
-                    class - Intermediate Java. Though I enjoyed my economics classes, particularly the game theory course I took, I was drawn more to the computer science class.
-                    I realized that computer science required a similar type of thinking as physics and mathematics, yet it could be used
-                    to build and innovate. The very next semester I switched to Computer Engineering and haven't looked back.
-                    I still love mathematically challenging work - I have taken my school's real analysis sequence for my math minor and am currently taking
-                    Algorithm Design - an undergraduate/graduate course in designing and proving the correctness of algorithms. So far we have learned about proof by contradiction
-                    for greedy algorithms, and are currently studying Dynamic Programming. I have loved every second of this class.<br>
-                    Outside of school, I enjoy getting outdoors (Pittsburgh weather permitting....) to play tennis or golf. I also 
-                    am a huge fan of the video game League of Legends.
-                    Since my freshman year, I have been heavily involved in my fraternity - Delta Chi - and have gained so much from it 
-                    including communication and teamwork skills, as well as lifelong friends.
+                <p id="about">
+                    Currently I am a UX Data Analyst at Vanguard, helping to improve our digital experiences 
+                    through experimentation and analysis. I am currently looking to transition back into software
+                    engineering. Though I have enjoyed working in product strategy, I deeply miss building applications
+                    and the type of complex problem solving present in software engineering.
                 </p>
             </div>
             <div class="tab-pane fade" id="workContent">
@@ -106,7 +84,7 @@
                     Software Engineering<br>
                     Introduction to Computer Architecture<br>
                     Programming on a Mobile Robotic System<br>
-                    Algorithm Design (Current)<br>
+                    Algorithm Design<br>
                 </p>
                 <h1 class="section">Other Interesting/relevant classes</h1>
                 <p class="description">
