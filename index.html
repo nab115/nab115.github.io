@@ -7,13 +7,7 @@
 <html>
     <body>
         <header>
-            <div class="layer"></div>
-            <p id="welcome">Naran Babha</p>
-            <div id="contact"> 
-                <a href="mailto:nbabha@gmail.com" style="text-decoration:none"><i id="e-mail" class="fa fa-envelope-square fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none"><i id="linkedin" class="fa fa-linkedin-square fa-lg"></i></a>
-                <a href="https://github.com/nab115/" style="text-decoration:none"><i id="github" class="fa fa-github-square fa-lg"></i></a>
-            </div>
+            <p id="name">Name</p>
             <ul class="nav nav-tabs">
                 <li class="active"><a class="tabButton" data-toggle="tab" href="#aboutContent">About Me</a></li>
                 <li><a class="tabButton" data-toggle="tab" href="#workContent">Work Experience</a></li>
@@ -21,87 +15,6 @@
                 <li><a class="tabButton" data-toggle="tab" href="#other">Courses</a></li>
             </ul>
         </header>
-        <div class="tab-content">
-            <div class="tab-pane fade in active" id="aboutContent">
-                <p id="about">
-                    Currently I am a UX Data Analyst at Vanguard, helping to improve our digital experiences 
-                    through experimentation and analysis. I am currently looking to transition back into software
-                    engineering. Though I have enjoyed working in product strategy, I deeply miss building applications
-                    and the type of complex problem solving present in software engineering.
-                </p>
-            </div>
-            <div class="tab-pane fade" id="workContent">
-                <h1 class="section">Robotics Institute at Carnegie Mellon</h1>
-                <p class="description">I currently work as a research intern at the Robotics Institute at Carnegie Mellon in Dr. Maxim Likhachev's <a href="http://www.sbpl.net/Home">Search Based Planning Lab</a>. 
-                My project involves implementation of EGraphs - an extension of wegithed A* search - into a trust based communication framework
-                designed for multi robot path planning.</p>
-                <h1 class="section">Bank of New York Mellon</h1>
-                <p class="description">During the Summer of 2017, I worked at BNY Mellon as a Technology Analyst Intern. I was able to be part of a Agile team
-                    and delivered sprint tasks using Javascript, HTML, and CSS. I also was a participant in an intern wide "strategic business challenge"
-                    in which my group recieved first place for coming up with the best solution to improve employee engagement in BNY's employee resource groups.
-                </p>
-                <h1 class="section">General Electric</h1>
-                <p class="description">During the Fall of 2016, I worked at General Electric as a Edison Engineering Intern. I was placed in the Test Engineering group, and 
-                    was tasked with fixing LabView test code. I also was able to experience a large scale manufacturing environment.
-                </p>
-                <h1 class="section">DOE-INFN Physics Program</h1>
-                <p class="description">During the Summer of 2015, I was accepted into the DOE-INFN program in Rome, Italy. This was a particle physics
-                    research program where I got to work with real data coming from the large hadron collider. At the end of the program I was able
-                    to travel to Geneva, Switzerland, the site of the LHC headquarters, and stay there for a couple weeks. Though this is one of the pinnacles
-                    of the field of phyiscs, I realized that I didn't enjoy the work at all. It was extremely theoretical, yet I came to realize that 
-                    I wanted to create and innovate, rather than work on something that I couldn't see or interact with. It just wasn't for me. This began a very
-                    important journy into self discovery and ended up in me switching my field of study. I am so happy for this experience because it taught me
-                    what I don't want to do, which I have come to learn is very important.
-                </p>
-            </div>
-            <div class="tab-pane fade" id="projectsContent">
-                    <h1 class="section">This Website!</h1>
-                    <p class="description">I created this website from scratch using JavaScript, HTML, CSS, and Bootstrap. It is hosted using GitHub pages
-                        and the code can be found in my public repository. It is still a work in progress.
-                    </p>
-                    <h1 class="section">Robots!</h1>
-                    <p class="description">This past summer while working at BNY Mellon, I took an Honors course through Pitt's CS department
-                        aimed at writing code in a real environment. We were assigned a partner, a laptop, and a Kobuki (which is essentially a rumba that we could manipulate through code).
-                        We learned python and the ROS (Robotic operating system framework) framework, and used these tools to create algorithms to complete three projects.
-                        The first project was simple : Command the robot to move an exact distance forward and backwards, or turn to an exact angle. This was
-                        accomplished through the use of the robot's build in odometer. This project required us to create a velocity smoother, which would ramp up or slow down the robot
-                        upon starting or stopping. Without using a smoother, the robot would jolt as it began to change speeds rapidly, cause the odometer
-                        to give incorrect data. The second project was a line follower, for which we used a color detection library. The third project was to make the robot autonomously travel through the
-                        hallways of one of the floors in the CS building. This required a very creative solution and A LOT of testing. For this project we were given an XBox Kinect,
-                        which we used for distance detection. The easy part of this was to travel down a straight hallway. We simply balanced the distance of the object (wall) to the left and right
-                        of the robot, turning slightly to make sure that these were always approximately even. The difficult part was to have the robot turn corners. To do this, we created a simple classification
-                        algorithm for detecting a corner, and whether it was a right or left turn. Then, upon coming close enough to the corner, the robot turned at a constant speed (while moving forward) until it had passed the corner.
-                    </p>
-            </div>
-            <div class="tab-pane fade" id="other">
-                <h1 class="section">Computer Sceince Related</h1>
-                <p class="description">Intermediate Java<br>
-                    Systems Software<br>
-                    Computer Organization<br>
-                    Data Structures<br>
-                    Algorithm Implementation<br>
-                    Digital Logic<br>
-                    Software Engineering<br>
-                    Introduction to Computer Architecture<br>
-                    Programming on a Mobile Robotic System<br>
-                    Algorithm Design<br>
-                </p>
-                <h1 class="section">Other Interesting/relevant classes</h1>
-                <p class="description">
-                    Physics I & II<br>
-                    Electromagnetics<br>
-                    Game Theory<br>
-                    Real Analysis<br>
-                    Differential Equations<br>
-                    Honors Linear Algebra<br>
-                    Analysis and Design of Electronic Circuits<br>
-                    Analytic Geometry and Calculus I II and III<br>
-                    Numerical Mathematical Analysis<br>
-                    Digital Lab<br>
-                    Signals and Systems Analysis<br>
-                        </p>
-            </div>
-        </div>
     </body>
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
