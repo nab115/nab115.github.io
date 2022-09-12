@@ -1,6 +1,6 @@
 header{
     position: relative;
-    background-color: rgb(23, 23, 212, 0.5);
+    background-color: rgb(125, 119, 230);
     color: black;
     height: 250px;
     width: 100%;
@@ -39,27 +39,36 @@ header{
     color: white;
     font-size: 50px;
 }
-.tab-content{
-    position: relative;
-    margin: auto;
-    width: 900px;
-    top: 50px;
-}
 [class^="tab-pane"] {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    position: relative;
+    height: 700px;
+    bottom: 70px;
+}
+#aboutContent{
+    background-color: rgb(125, 119, 230);
 }
 .tab-container{
-    border: rgb(23, 23, 212, 0.5) 10px solid;
+    position: relative;
+    border: white 10px solid;
+    background-color: rgb(231, 236, 240);
+    margin: auto;
+    width: 900px;
+    top: 100px;
 }
 #yellowstone {
-    height: 40%;
-    width: 50%;
+    height: 350px;
+    width: 450px;
 }
 .tab-text {
-    float: right;
-    width: 50%;
-    padding-left: 25px;
-    text-align: left;
+    margin: auto;
+    text-align: center;
+    width: 430px;
     font-size: 18px;
+}
+#home-text {
+    float: right;
+    text-align: left;
+    padding-left: 25px;
 }
