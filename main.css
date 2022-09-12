@@ -20,6 +20,10 @@ header{
     font-size: 15px;
     color: white;
 }
+svg{
+    position: relative;
+    bottom: 1px;
+}
 
 #title{
     position: relative;
