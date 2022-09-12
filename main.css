@@ -39,15 +39,19 @@ header{
     color: white;
     font-size: 50px;
 }
+.tab-content{
+    position: relative;
+    height: 100%;
+}
 [class^="tab-pane"] {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     position: relative;
-    height: 700px;
     bottom: 70px;
 }
 #aboutContent{
     background-color: rgb(125, 119, 230);
+    height: 20vh;
 }
 .tab-container{
     position: relative;
