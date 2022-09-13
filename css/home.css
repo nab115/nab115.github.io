@@ -1,0 +1,19 @@
+html{
+    background-color: rgb(125, 119, 230);
+}
+#yellowstone {
+    height: 350px;
+    width: 450px;
+}
+.home-content{
+    border: white 10px solid;
+}
+#home-text {
+    float: right;
+    text-align: left;
+    padding-left: 25px;
+    margin: auto;
+    text-align: center;
+    width: 430px;
+    font-size: 18px;
+}

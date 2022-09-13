@@ -1,68 +1,10 @@
 <!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<link href="packages/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="main.css"/>
+<script src="jquery-3.2.1.min.js"></script>
+<script>sessionStorage.setItem('active', '#home-tab');</script>
 <html>
     <body>
-        <header>
-            <ul class="nav nav-tabs">
-                <li>
-                    <a class="tabButton" href="html/home.html">Projects</a>
-                </li>
-                <li class="active">
-                    <a class="tabButton" href="html/home.html">Home</a>
-                </li>
-            </ul>
-            <p id="title">Naran Babha</p>
-            <div id="contact" >
-                <a href="mailto:nbabha@gmail.com">
-                    <i class="fa fa-envelope-square" aria-hidden="true" aria-setsize="100px"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
-                    <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" aria-setsize="100px"></i>
-                </a>
-                <a href="https://github.com/nab115/" style="text-decoration:none">
-                    <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
-                </a>
-            </div>
-        </header>
-        <svg style="background-color:white;" width="100%" height="75" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="rgb(125, 119, 230)"></path>
-        </svg>
-        <div class="tab-content">
-            <div class="tab-pane fade in active" id="aboutContent">
-                <div class="tab-pane fade in active" id="aboutContent">
-                    <div class="tab-container">
-                        <img src="images/yellowstone_chilling.jpg" id="yellowstone">
-                        <div class="tab-text" id="home-text">
-                            <h1 id="aboutTitle">Hi, I'm Naran</h1>
-                            <p id="about">
-                                I am currently a Data Analyst at Vanguard, helping to improve our web and mobile experiences 
-                                through analysis and experimentation.
-                                <br>
-                                <br>
-                                I am currently looking to make the transition back into software engineering.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="projectsContent">
-                <div class="tab-container">
-                    <div class="tab-text">
-                        <h1 class="section">This Website</h1>
-                        <p class="description">
-                            I created this website from scratch using JavaScript, HTML, CSS, and Bootstrap. 
-                            It is hosted using GitHub pages. It will be a constant work in progress as I learn more and make small improvements.
-                            <br>
-                            <br>
-                            The code can be found <a href="https://github.com/nab115/nab115.github.io">here</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <script>
+            $("body").load("html/home.html");
+        </script>
     </body>
 </html>
