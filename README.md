@@ -6,8 +6,8 @@
 </div>
 
 # TODO
-- [ X ] Jiggle on contact icons hover
+- [X] Jiggle on contact icons hover
 - [ ] Clickable list items in Projects
-- [ X ] Configure custom url
+- [X] Configure custom url
 - [ ] Make design responsive for mobile and other screen sizes
 
