@@ -6,6 +6,6 @@
 </div>
 
 # TODO
-- [] Jiggle on contact icons hover
-- [] Clickable list items in Projects
+- [ ] Jiggle on contact icons hover
+- [ ] Clickable list items in Projects
 
