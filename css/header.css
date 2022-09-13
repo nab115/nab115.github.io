@@ -33,6 +33,7 @@ header{
     text-align: center;
 }
 [class^="fa fa-"] {
+    position: relative;
     padding-right: 8px;
     color: white;
     font-size: 50px;

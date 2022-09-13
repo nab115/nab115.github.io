@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="/css/header.css"/>
 <script src="/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(sessionStorage.getItem('active')).parent().addClass("active");
+        jiggle($("[class^='fa fa-']"), 400);
+    });
+
+    $("#contact a").hover(
+        function() {
+            jiggle($(this).children("i").eq(0), 200);
+        }
+        , function() {
+        }
+    );
+
+    function jiggle(ob, d) {
+        ob.animate({bottom: "+=10px"}, d);
+        ob.animate({bottom: "-=10px"}, d);
+    }
+</script>
 
 <ul class="nav nav-tabs">
     <li>
@@ -21,10 +40,4 @@
     <a href="https://github.com/nab115/" style="text-decoration:none">
         <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
     </a>
-<script>
-    $(document).ready(function() {
-        console.log(sessionStorage.getItem('active'))
-        $(sessionStorage.getItem('active')).parent().addClass("active");
-    });
-</script>
 </div>
