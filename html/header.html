@@ -4,10 +4,10 @@
 
 <ul class="nav nav-tabs">
     <li>
-        <a class="tabButton" onclick="reply_click(this.id)" id="project-tab" href="/html/projects.html">Projects</a>
+        <a class="tabButton" id="project-tab" href="/html/projects.html">Projects</a>
     </li>
     <li>
-        <a class="tabButton" onclick="reply_click(this.id)" id="home-tab" href="/html/home.html">Home</a>
+        <a class="tabButton" id="home-tab" href="/html/home.html">Home</a>
     </li>
 </ul>
 <p id="title">Naran Babha</p>
@@ -22,13 +22,6 @@
         <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
     </a>
 <script>
-    function reply_click(clicked_id) {
-        sessionStorage.setItem('active', '#' + clicked_id);
-        console.log(sessionStorage.getItem('active'))
-        $(".tabButton").parent().removeClass("active");
-        $(sessionStorage.getItem('active')).parent().addClass("active");
-    };
-
     $(document).ready(function() {
         console.log(sessionStorage.getItem('active'))
         $(sessionStorage.getItem('active')).parent().addClass("active");
