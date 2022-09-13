@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="js/bootstrap.min.js"></script>
+<link href="packages/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="main.css"/>
 <html>
     <body>
         <header>
             <ul class="nav nav-tabs">
                 <li>
-                    <a class="tabButton" data-toggle="tab" href="#blogContent">Blog</a>
-                </li>
-                <li>
-                    <a class="tabButton" data-toggle="tab" href="#projectsContent">Projects</a>
+                    <a class="tabButton" href="html/home.html">Projects</a>
                 </li>
                 <li class="active">
-                    <a class="tabButton" data-toggle="tab" href="#aboutContent">Home</a>
+                    <a class="tabButton" href="html/home.html">Home</a>
                 </li>
             </ul>
             <p id="title">Naran Babha</p>
@@ -35,17 +33,19 @@
         </svg>
         <div class="tab-content">
             <div class="tab-pane fade in active" id="aboutContent">
-                <div class="tab-container">
-                    <img src="images/yellowstone_chilling.jpg" id="yellowstone">
-                    <div class="tab-text" id="home-text">
-                        <h1 id="aboutTitle">Hi, I'm Naran</h1>
-                        <p id="about">
-                            I am currently a Data Analyst at Vanguard, helping to improve our web and mobile experiences 
-                            through analysis and experimentation.
-                            <br>
-                            <br>
-                            I am currently looking to make the transition back into software engineering.
-                        </p>
+                <div class="tab-pane fade in active" id="aboutContent">
+                    <div class="tab-container">
+                        <img src="images/yellowstone_chilling.jpg" id="yellowstone">
+                        <div class="tab-text" id="home-text">
+                            <h1 id="aboutTitle">Hi, I'm Naran</h1>
+                            <p id="about">
+                                I am currently a Data Analyst at Vanguard, helping to improve our web and mobile experiences 
+                                through analysis and experimentation.
+                                <br>
+                                <br>
+                                I am currently looking to make the transition back into software engineering.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,14 +63,6 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="blogContent">
-                <div class="tab-container">
-                    <div class="tab-text">
-                        <h1 class="section">TBD</h1>
-                    </div>
-                </div>
-            </div>
         </div>
     </body>
-    <script src="js/bootstrap.min.js"></script>
 </html>

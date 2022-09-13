@@ -1,7 +1,7 @@
 header{
     position: relative;
+    color: white;
     background-color: rgb(125, 119, 230);
-    color: black;
     height: 250px;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
@@ -20,18 +20,12 @@ header{
     font-size: 15px;
     color: white;
 }
-svg{
-    position: relative;
-    bottom: 5px;
-}
-
 #title{
     position: relative;
     text-align: center;
     top: 60px;
     font-size: 70px;
     font-weight: 700;
-    color: white;
 }
 #contact{
     position: relative;
@@ -55,7 +49,6 @@ svg{
 }
 #aboutContent{
     background-color: rgb(125, 119, 230);
-    height: 20vh;
 }
 .tab-container{
     position: relative;
