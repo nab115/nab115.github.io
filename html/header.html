@@ -2,10 +2,22 @@
 <link rel="stylesheet" type="text/css" href="/css/header.css"/>
 <script src="/js/bootstrap.min.js"></script>
 <script>
+    function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
     $(document).ready(function() {
         $(sessionStorage.getItem('active')).parent().addClass("active");
-        jiggle($("[class^='fa fa-']"), 400);
+        initial_jiggle();
     });
+
+    async function initial_jiggle() {
+        for(let i = 0; i < $("#contact").children("a").length; i++) {
+            // console.log($("#contact").children("a").eq(i).children("i").eq(0));
+            await sleep(100);
+            jiggle($("#contact").children("a").eq(i).children("i").eq(0), 200);
+        }
+    }
 
     $("#contact a").hover(
         function() {
@@ -16,8 +28,8 @@
     );
 
     function jiggle(ob, d) {
-        ob.animate({bottom: "+=10px"}, d);
-        ob.animate({bottom: "-=10px"}, d);
+        ob.animate({bottom: "+=15px"}, d);
+        ob.animate({bottom: "-=15px"}, d);
     }
 </script>
 
