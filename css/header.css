@@ -27,14 +27,3 @@ header{
     font-size: 70px;
     font-weight: 700;
 }
-#contact{
-    position: relative;
-    top: 50px;
-    text-align: center;
-}
-[class^="fa fa-"] {
-    position: relative;
-    padding-right: 8px;
-    color: white;
-    font-size: 50px;
-}

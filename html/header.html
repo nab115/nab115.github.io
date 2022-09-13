@@ -2,35 +2,17 @@
 <link rel="stylesheet" type="text/css" href="/css/header.css"/>
 <script src="/js/bootstrap.min.js"></script>
 <script>
-    function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
     $(document).ready(function() {
         $(sessionStorage.getItem('active')).parent().addClass("active");
-        initial_jiggle();
+        let title = null;
+        if(sessionStorage.getItem('active') == '#home-tab') {
+            title = 'Naran Babha';
+        }
+        else if (sessionStorage.getItem('active') == '#project-tab') {
+            title = 'Projects';
+        }
+        $('#title').text(title);
     });
-
-    async function initial_jiggle() {
-        for(let i = 0; i < $("#contact").children("a").length; i++) {
-            // console.log($("#contact").children("a").eq(i).children("i").eq(0));
-            await sleep(100);
-            jiggle($("#contact").children("a").eq(i).children("i").eq(0), 200);
-        }
-    }
-
-    $("#contact a").hover(
-        function() {
-            jiggle($(this).children("i").eq(0), 200);
-        }
-        , function() {
-        }
-    );
-
-    function jiggle(ob, d) {
-        ob.animate({bottom: "+=15px"}, d);
-        ob.animate({bottom: "-=15px"}, d);
-    }
 </script>
 
 <ul class="nav nav-tabs">
@@ -42,14 +24,3 @@
     </li>
 </ul>
 <p id="title">Naran Babha</p>
-<div id="contact" >
-    <a href="mailto:nbabha@gmail.com">
-        <i class="fa fa-envelope-square" aria-hidden="true" aria-setsize="100px"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
-        <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" aria-setsize="100px"></i>
-    </a>
-    <a href="https://github.com/nab115/" style="text-decoration:none">
-        <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
-    </a>
-</div>
