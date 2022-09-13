@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<script src="/jquery-3.2.1.min.js"></script>
+<link href="/packages/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/packages/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/css/home.css"/>
+<html>
+    <body>
+        <header>
+            <script> 
+                $(function(){ $("header").load("/html/header.html") });
+            </script>
+        </header>
+        <div id="contact" >
+            <a href="mailto:nbabha@gmail.com">
+                <i class="fa fa-envelope-square" aria-hidden="true" aria-setsize="100px"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
+                <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" aria-setsize="100px"></i>
+            </a>
+            <a href="https://github.com/nab115/" style="text-decoration:none">
+                <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
+            </a>
+        </div>
+        <div class="page-content">
+            <div class="home-content">
+                <img src="/images/yellowstone_chilling.jpg" id="yellowstone">
+                    <div id="home-text">
+                        <h1>Hi, I'm Naran</h1>
+                        <p>
+                            I am currently a Data Analyst at Vanguard, helping to improve our web and 
+                            mobile experiences through analysis and experimentation.
+                            <br>
+                            <br>
+                            I am currently looking to make the transition back into software engineering.
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </body>
+    <script>
+        sessionStorage.setItem('active', '#home-tab');
+    
+        function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    
+        $(document).ready(function() {
+            initial_jiggle();
+        });
+    
+        async function initial_jiggle() {
+            for(let i = 0; i < $("#contact").children("a").length; i++) {
+                // console.log($("#contact").children("a").eq(i).children("i").eq(0));
+                await sleep(100);
+                jiggle($("#contact").children("a").eq(i).children("i").eq(0), 200);
+            }
+        }
+    
+        console.log($("html").css("color"));
+    
+        $("#contact a").hover(
+            function() {
+                jiggle($(this).children("i").eq(0), 200);
+            }
+            , function() {
+            }
+        );
+    
+        function jiggle(ob, d) {
+            ob.animate({bottom: "+=15px"}, d);
+            ob.animate({bottom: "-=15px"}, d);
+        }
+    </script>
+</html>

@@ -1,0 +1,29 @@
+header{
+    position: relative;
+    color: white;
+    background-color: rgb(125, 119, 230);
+    height: 250px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-tabs {
+    width: 100%;
+}
+
+.nav-tabs li {
+    float: right;
+    right: 100px;
+}
+
+.tabButton{
+    position: relative;
+    font-size: 15px;
+    color: white;
+}
+#title{
+    position: relative;
+    text-align: center;
+    top: 60px;
+    font-size: 70px;
+    font-weight: 700;
+}

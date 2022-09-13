@@ -1,0 +1,13 @@
+body{
+    background-color: inherit;
+}
+
+.page-content{
+    position: relative;
+    margin: auto;
+    width: 900px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(231, 236, 240);
+}

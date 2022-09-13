@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/css/header.css"/>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(sessionStorage.getItem('active')).parent().addClass("active");
+        let title = null;
+        if(sessionStorage.getItem('active') == '#home-tab') {
+            title = 'Naran Babha';
+        }
+        else if (sessionStorage.getItem('active') == '#project-tab') {
+            title = 'Projects';
+        }
+        $('#title').text(title);
+    });
+</script>
+
+<ul class="nav nav-tabs">
+    <li>
+        <a class="tabButton" id="project-tab" href="/html/projects.html">Projects</a>
+    </li>
+    <li>
+        <a class="tabButton" id="home-tab" href="/html/home.html">Home</a>
+    </li>
+</ul>
+<p id="title">Naran Babha</p>

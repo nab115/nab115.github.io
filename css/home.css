@@ -1,0 +1,30 @@
+html{
+    background-color: rgb(125, 119, 230);
+}
+#contact{
+    position: relative;
+    text-align: center;
+    height: 70px;
+}
+[class^="fa fa-"] {
+    position: relative;
+    bottom: 50px;
+    padding-right: 8px;
+    color: white;
+    font-size: 50px;
+}
+#yellowstone {
+    height: 350px;
+    width: 450px;
+}
+.home-content{
+    border: white 10px solid;
+}
+#home-text {
+    float: right;
+    text-align: left;
+    padding-left: 25px;
+    margin: auto;
+    text-align: center;
+    width: 430px;
+}
