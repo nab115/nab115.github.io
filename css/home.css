@@ -1,21 +1,21 @@
 html{
-    background-color: rgb(125, 119, 230);
+    background-color:rgb(178, 200, 213);
 }
 #contact{
     position: relative;
     text-align: center;
     height: 70px;
+    bottom: 60px;
 }
 [class^="fa fa-"] {
     position: relative;
-    bottom: 50px;
     padding-right: 8px;
-    color: white;
+    color: rgb(54, 69, 79);
     font-size: 50px;
 }
 #yellowstone {
-    height: 420px;
-    width: 550px;
+    height: 325px;
+    width: 450px;
 }
 .home-content{
     border: white 10px solid;
@@ -25,5 +25,5 @@ html{
     padding-left: 25px;
     margin: auto;
     text-align: left;
-    width: 450px;
+    width: 430px;
 }
