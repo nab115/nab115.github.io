@@ -23,7 +23,7 @@ html{
 #home-text {
     float: right;
     padding-left: 25px;
-    margin: auto;
+    text-align: center;
     text-align: left;
     width: 430px;
 }

@@ -1,3 +1,16 @@
 html{
     background-color: white;
 }
+
+.projects-content {
+    padding: 20px;
+    border-style: outset;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.projects-separator {
+    height: 50px;
+}
