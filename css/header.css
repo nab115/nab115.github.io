@@ -7,7 +7,7 @@ header{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#navigation-links {
+#navigation-container {
     position: relative;
     right: 1%;
     display: flex; 
