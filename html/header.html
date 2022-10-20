@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="/css/header.css"/>
-<script src="/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
         $(sessionStorage.getItem('active')).parent().addClass("active");
@@ -14,13 +13,14 @@
         $('#title').text(title);
     });
 </script>
-
-<ul class="nav nav-tabs">
-    <li>
-        <a class="tabButton" id="project-tab" href="/projects">Projects</a>
-    </li>
-    <li>
-        <a class="tabButton" id="home-tab" href="/home">Home</a>
-    </li>
-</ul>
+<div id="navigation-container">
+    <ul id="navigation-links">
+        <li>
+            <a class="navigation-button" id="home-tab" href="/home">Home</a>
+        </li>
+        <li>
+            <a class="navigation-button" id="project-tab" href="/projects/">Projects</a>
+        </li>
+    </ul>
+</div>
 <p id="title"></p>

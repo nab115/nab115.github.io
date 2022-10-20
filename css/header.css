@@ -7,27 +7,22 @@ header{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.nav-tabs {
-    width: 100%;
-    background-color: rgb(223, 228, 233);
+#navigation-links {
+    position: relative;
+    right: 1%;
+    display: flex; 
+    justify-content: flex-end;
+    list-style-type : none;
 }
 
-.nav-tabs li {
-    float: right;
-    right: 100px;
-}
-
-.tabButton{
+.navigation-button {
+    padding: 8px 15px;
     position: relative;
     font-size: 15px;
     color: rgb(54, 69, 79);
 }
 
-.nav-tabs li a {
-    padding: 8px 15px;
-}
 #title{
-    position: relative;
     text-align: center;
     font-size: 70px;
     font-weight: 600;
