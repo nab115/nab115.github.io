@@ -1,8 +1,8 @@
-header{
+#header-container{
     position: relative;
     color: rgb(54, 69, 79);
-    background-color: rgb(178, 200, 213);
-    height: 200px;
+    /* background-color: rgb(178, 200, 213); */
+    height: 150px;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -13,6 +13,7 @@ header{
     display: flex; 
     justify-content: flex-end;
     list-style-type : none;
+    margin: 0px;
 }
 
 .navigation-button {
@@ -24,6 +25,8 @@ header{
 
 #title{
     text-align: center;
+    position: relative;
     font-size: 70px;
     font-weight: 600;
+    margin: 0px;
 }

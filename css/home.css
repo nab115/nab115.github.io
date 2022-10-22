@@ -1,5 +1,5 @@
 html{
-    background-color:rgb(178, 200, 213);
+    background-color:rgb(147, 191, 216);
 }
 #contact{
     position: relative;
@@ -13,9 +13,9 @@ html{
     color: rgb(54, 69, 79);
     font-size: 50px;
 }
-#yellowstone {
-    height: 325px;
-    width: 450px;
+#main-image {
+    height: 450px;
+    width: 525px;
 }
 .home-content{
     border: white 10px solid;
