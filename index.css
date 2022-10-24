@@ -1,5 +1,6 @@
 html {
-    background-color:rgb(117, 182, 220);
+    /* background-color: rgb(117, 182, 220); */
+    background-color:rgb(18, 50, 67);
     color: rgb(54, 69, 79);
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -8,49 +9,54 @@ body {
     margin: 0%;
 }
 
-.title {
+[class^="title"] {
     text-align: center;
     position: relative;
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 75px;
+    font-weight: 350;
     margin: 0px;
+}
+
+.title-light {
+    color: rgb(255, 255, 255);
 }
 
 #contact {
     position: relative;
     text-align: center;
-    margin-top: 10px;
 }
 
 [class^="fa fa-"] {
     position: relative;
     padding-right: 8px;
-    color: rgb(54, 69, 79);
+    color: rgb(255, 255, 255);;
     font-size: 50px;
-}
-
-#main-image {
-    height: 450px;
-    width: 50%;
 }
 
 #about-me{
     border: white 10px solid;
     width: 1000px;
+    height: 450px;
     position: relative;
     margin: auto;
     margin-top: 50px;
-    width: 1000px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     height: 100%;
     background-color: rgb(235, 239, 243);
 }
 
+#main-image {
+    height: 450px;
+    width: 50%;
+    display: inline-block;
+}
+
 #about-text {
-    float: right;
+    /* float: right; */
+    display: inline-block;
     text-align: left;
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 450px;
 }
