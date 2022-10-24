@@ -11,6 +11,24 @@ function jiggle(ob, d) {
     ob.animate({bottom: "-=15px"}, d);
 }
 
+// this works, yet gives maximum call stack size exceeded because of the infinite recursion
+// obviously this happens, so the solution is to have an infinite loop which finishese 
+//each call before executing the next
+async function bounce_error(ob, d) {
+        jiggle(ob, d);
+        bounce(ob, d);
+}
+
+async function bounce(ob, d) {
+    ob.animate({bottom: "+=15px"}, d);
+    ob.animate({bottom: "-=15px"}, d, function() { bounce(ob, d) });
+    // why does the above code work but not 
+    // ob.animate({bottom: "-=15px"}, d, bounce(ob, d));
+    // or
+    // ob.animate({bottom: "-=15px"}, d, () => bounce(ob, d));
+    // this is relevant https://stackoverflow.com/questions/8228281/what-is-the-function-construct-in-javascript
+}
+
 async function initial_jiggle() {
     for(let i = 0; i < $("#contact").children("a").length; i++) {
         await sleep(100);
@@ -33,6 +51,7 @@ function fillProjects() {
 
 $(document).ready(function() {
     initial_jiggle();
+    bounce($("#down_arrow"), 750);
     fillProjects();
 });
 
@@ -45,8 +64,9 @@ $("#contact a").hover(
     }
 );
 
-// $('.project-container').append('<p>Testing Jquery</p>');
-// console.log($(".title").css({"font-size" : "10px"}));
-// console.log($(".title").eq(1).attr("font-size", "10px"));
-
-// console.log(projects[0]['title']);
+$("#read-more__nav").click(
+    function(e) {
+        e.preventDefault();
+        document.getElementById($(this).attr('href').substr(1)).scrollIntoView({behavior: 'smooth'});
+    }
+)

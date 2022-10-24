@@ -11,7 +11,7 @@ body {
 .title {
     text-align: center;
     position: relative;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 600;
     margin: 0px;
 }
@@ -31,7 +31,7 @@ body {
 
 #main-image {
     height: 450px;
-    width: 525px;
+    width: 50%;
 }
 
 #about-me{
@@ -43,22 +43,37 @@ body {
     width: 1000px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+    height: 100%;
     background-color: rgb(235, 239, 243);
 }
 
 #about-text {
     float: right;
-    padding-left: 25px;
-    text-align: center;
     text-align: left;
-    width: 430px;
+    position: relative;
+    width: 50%;
+    height: 450px;
 }
 
-#read-more {
+#about-text h1, p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#read-more__container {
     position: absolute;
-    bottom: 10%;
-    right: 20%;
+    width: 100%;
+    bottom: 0px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#read-more__nav {
     color: rgb(54, 69, 79);
+}
+
+#down_arrow {
+    position: relative;
 }
 
 #projects-container {
@@ -68,11 +83,11 @@ body {
 }
 
 .project-container {
-    height: 500px;
+    height: 400px;
     background-color: white;
     margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     position: relative;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
