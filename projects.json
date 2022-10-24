@@ -1,13 +1,13 @@
 [
     {
         "title" : "This Website"
-        , "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        , "description" : "My personal website built with the goal of learning the basics of web development without the use of any frameworks - just pure HTML, CSS and JavaScript."
         , "link" : "https://github.com/nab115/nab115.github.io"
     }
 
     , {
         "title" : "Image Compression"
-        , "description" : "I built this too."
+        , "description" : "A simple image processing library in Java. It is currently capable of cropping an image; I am planning on adding greyscale and compression features next."
         , "link" : "https://github.com/nab115/image-processing"
     }
 ]
