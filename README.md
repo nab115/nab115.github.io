@@ -7,7 +7,8 @@
 
 # TODO
 - [X] Jiggle on contact icons hover
-- [ ] Clickable list items in Projects
 - [X] Configure custom url
-- [ ] Make design responsive for mobile and other screen sizes
+- [ ] Reduce use of px in CSS (e.g. main image)
+- [ ] Clickable list items in Projects
+- [ ] Re-align about me text on screen size reduction
 
