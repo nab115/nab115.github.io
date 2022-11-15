@@ -6,8 +6,8 @@
     }
 
     , {
-        "title" : "Image Compression"
-        , "description" : "A simple image processing library in Java. It is currently capable of cropping an image; I am planning on adding greyscale and compression features next."
-        , "link" : "https://github.com/nab115/image-processing"
+        "title" : "Image Editor"
+        , "description" : "Image Editing Web Application built with Spring Boot and Spring MVC."
+        , "link" : "https://github.com/nab115/image-edit"
     }
 ]
