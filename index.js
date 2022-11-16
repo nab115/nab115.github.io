@@ -30,7 +30,7 @@ async function bounce(ob, d) {
 }
 
 async function initial_jiggle() {
-    for(let i = 0; i < $("#contact").children("a").length; i++) {
+    for(var i = 0; i < $("#contact").children("a").length; i++) {
         await sleep(100);
         jiggle($("#contact").children("a").eq(i).children("i").eq(0), 200);
     }
