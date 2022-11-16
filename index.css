@@ -89,11 +89,12 @@ body {
 }
 
 .project-container {
-    height: 400px;
+    aspect-ratio: 2.25 / 1;
+    width: 60vw;
+    min-width: 800px;
     background-color: white;
+    margin : auto;
     margin-top: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
     position: relative;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -115,9 +116,28 @@ body {
     padding-right: 50px;
 }
 
+.project-info {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.project-image {
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-image {
+    width: 100%;
+}
+
 .project-text-link {
-    bottom: 0px;
-    right: 30px;
+    bottom: 5px;
+    left: 0px;
     position : absolute;
     color: rgb(117, 182, 220);;
 }

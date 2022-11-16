@@ -40,9 +40,12 @@ function fillProjects() {
     projects.forEach((p) => {
         $('#projects').append(`
             <div class="project-container">
-                <p class="project-text-title">${p["title"]}</p>
-                <p class="project-text-description">${p["description"]}</p>
-                <a class="project-text-link" href=${p["link"]}>View the code</p>
+                <div class="project-info">
+                    <p class="project-text-title">${p["title"]}</p>
+                    <p class="project-text-description">${p["description"]}</p>
+                    <a class="project-text-link" href=${p["link"]}>View the code</a>
+                </div>
+                <div class=project-image><img class="preview-image" src=${p["image"]}></div>
             </div>
             `
         );
