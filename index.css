@@ -82,7 +82,7 @@ body { margin: 0px; }
     text-align: left;
 }
 
-.project-text-title {
+.project-title {
     font-size: 35px;
     font-weight: 600;
 }
@@ -99,8 +99,11 @@ body { margin: 0px; }
     width: 100%;
 }
 
-.project-text-link {
-    bottom: 10px;
+.project-links {
+    bottom: 0px;
     position : absolute;
-    color: rgb(117, 182, 220);;
+}
+
+.project-links a {
+    margin-right: 20px;
 }

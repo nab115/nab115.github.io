@@ -42,9 +42,12 @@ function fillProjects() {
             <div class="project-container">
                 <div class="project-info__outer">
                     <div class="project-info__inner">
-                        <p class="project-text-title">${p["title"]}</p>
-                        <p class="project-text-description">${p["description"]}</p>
-                        <p><a class="project-text-link" href=${p["link"]}>View the code</a></p>
+                        <p class="project-title">${p["title"]}</p>
+                        <p>${p["description"]}</p>
+                        <div class="project-links">
+                            <p><a class="text-blue" href=${p["code"]}>View the code</a>
+                            <a class="text-blue" href=${p["readmore"]}>Read More &#8594</a></p>
+                        </div>
                     </div>
                 </div>
                 <div class=project-image-container><img src=${p["image"]}></div>
