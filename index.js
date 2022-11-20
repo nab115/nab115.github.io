@@ -40,12 +40,14 @@ function fillProjects() {
     projects.forEach((p) => {
         $('#projects').append(`
             <div class="project-container">
-                <div class="project-info">
-                    <p class="project-text-title">${p["title"]}</p>
-                    <p class="project-text-description">${p["description"]}</p>
-                    <a class="project-text-link" href=${p["link"]}>View the code</a>
+                <div class="project-info__outer">
+                    <div class="project-info__inner">
+                        <p class="project-text-title">${p["title"]}</p>
+                        <p class="project-text-description">${p["description"]}</p>
+                        <p><a class="project-text-link" href=${p["link"]}>View the code</a></p>
+                    </div>
                 </div>
-                <div class=project-image><img class="preview-image" src=${p["image"]}></div>
+                <div class=project-image-container><img src=${p["image"]}></div>
             </div>
             `
         );
@@ -67,7 +69,7 @@ $("#contact a").hover(
     }
 );
 
-$("#read-more__nav").click(
+$(".smooth-scroll").click(
     function(e) {
         e.preventDefault();
         document.getElementById($(this).attr('href').substr(1)).scrollIntoView({behavior: 'smooth'});

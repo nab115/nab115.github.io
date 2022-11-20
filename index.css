@@ -1,84 +1,54 @@
-html {
-    /* background-color: rgb(117, 182, 220); */
-    background-color:rgb(18, 50, 67);
-    color: rgb(54, 69, 79);
-    font-family: 'Source Sans Pro', sans-serif;
-}
+html { background-color:rgb(18, 50, 67); }
 
-body {
-    margin: 0%;
-}
+/* ensure html background color doesn't show in projects section */
+body { margin: 0px; }
 
-[class^="title"] {
-    text-align: center;
-    position: relative;
-    font-size: 75px;
-    font-weight: 350;
-    margin: 0px;
-}
-
-.title-light {
-    color: rgb(255, 255, 255);
-}
-
-#contact {
-    position: relative;
-    text-align: center;
-}
-
-[class^="fa fa-"] {
+.contact-btn {
+    /* relative positioning to jiggle icons */
     position: relative;
     padding-right: 8px;
-    color: rgb(255, 255, 255);;
     font-size: 50px;
 }
 
-#about-me{
+#about-container{
     border: white 10px solid;
     width: 1000px;
     height: 450px;
     position: relative;
     margin: auto;
     margin-top: 50px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    height: 100%;
     background-color: rgb(235, 239, 243);
 }
 
-#main-image {
+#about-image {
     height: 450px;
     width: 50%;
     display: inline-block;
 }
 
-#about-text {
+#about-text__outer {
     /* float: right; */
     display: inline-block;
-    text-align: left;
     position: absolute;
     width: 50%;
     height: 450px;
 }
 
-#about-text h1, p {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#read-more__container {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
+#about-text__inner {
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: left;
-    padding-left: 40px;
+    position: relative;
+    height: 100%;
 }
 
-#read-more__nav {
-    color: rgb(54, 69, 79);
+#about-text__inner h3 {
+    position: absolute;
+    bottom: 30px;
 }
 
 #down_arrow {
+    /* relative positioning to bounce arrow */
     position: relative;
 }
 
@@ -99,11 +69,17 @@ body {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-[class^="project-text"] {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding-left: 25px;
-    padding-top: 25px;
-    margin: 0px;
+.project-info__outer {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.project-info__inner {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: left;
 }
 
 .project-text-title {
@@ -111,19 +87,7 @@ body {
     font-weight: 600;
 }
 
-.project-text-description {
-    font-size: 20px;
-    padding-right: 50px;
-}
-
-.project-info {
-    width: 50%;
-    height: 100%;
-    float: left;
-    position: relative;
-}
-
-.project-image {
+.project-image-container {
     float: right;
     width: 50%;
     height: 100%;
@@ -131,13 +95,12 @@ body {
     overflow: hidden;
 }
 
-.preview-image {
+.project-image-container img {
     width: 100%;
 }
 
 .project-text-link {
-    bottom: 5px;
-    left: 0px;
+    bottom: 10px;
     position : absolute;
     color: rgb(117, 182, 220);;
 }
