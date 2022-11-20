@@ -2,14 +2,15 @@
     {
         "title" : "Image Editor"
         , "description" : "Image editing web application with custom-made greyscale and crop functionality. Built in Spring leveraging Spring Boot and Spring MVC."
-        , "link" : "https://github.com/nab115/image-edit"
-        , "image" : "/images/image-edit.png"
+        , "code" : "https://github.com/nab115/image-edit"
+        , "readmore" : "/image-edit"
+        , "image" : "/media/image-edit.png"
     }
 
     , {
         "title" : "This Website"
         , "description" : "My personal website built with the goal of learning the basics of web development without the use of any frameworks - just HTML, CSS and JavaScript."
-        , "link" : "https://github.com/nab115/nab115.github.io"
-        , "image" : "/images/website.png"
+        , "code" : "https://github.com/nab115/nab115.github.io"
+        , "image" : "/media/website.png"
     }
 ]
