@@ -1,7 +1,7 @@
 [
     {
         "title" : "Image Editor"
-        , "description" : "Image editing web application with custom-made greyscale and crop functionality. Built in Spring leveraging Spring Boot and Spring MVC."
+        , "description" : "Image editing web application with custom-made cropping and greyscale functionality. Built in Spring leveraging Spring Boot and Spring MVC."
         , "code" : "https://github.com/nab115/image-edit"
         , "readmore" : "/image-edit"
         , "image" : "/media/image-edit.png"
