@@ -25,6 +25,8 @@ p { font-size: 20px; }
 
 .text-theme { color : rgb(54, 69, 79);}
 
+.text-blue { color : rgb(18, 50, 67);}
+
 .text-centered {
     text-align: center;
     position: relative;

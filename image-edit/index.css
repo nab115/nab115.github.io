@@ -1,0 +1,16 @@
+html {
+    background-color: rgb(235, 239, 243);
+}
+
+h1 {
+    pointer-events: none;
+}
+
+#video-container {
+    width: 100%;
+    text-align: center;
+}
+
+#home__nav {
+    position: absolute;
+}
