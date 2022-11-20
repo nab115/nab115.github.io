@@ -1,0 +1,31 @@
+html { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    color: rgb(54, 69, 79);
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 350;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p { font-size: 20px; }
+
+.text-white { color: white }
+
+.text-theme { color : rgb(54, 69, 79);}
+
+.text-centered {
+    text-align: center;
+    position: relative;
+}

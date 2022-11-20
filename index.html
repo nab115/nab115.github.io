@@ -2,47 +2,43 @@
 <script src="jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/index.css"/>
+<link rel="stylesheet" type="text/css" href="/style.css"/>
 <html>
     <head>
         <title>Naran Babha</title>
     </head>
     <body>
-        <p class="title-light">Naran Babha</p>
-        <div id="contact">
+        <h1 class="text-white text-centered">Naran Babha</h1>
+        <div class="text-centered" id="contact">
             <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
-                <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" aria-setsize="100px"></i>
+                <i id="linkedin" class="fa fa-linkedin-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
             </a>
             <a href="https://github.com/nab115/" style="text-decoration:none">
-                <i id="github" class="fa fa-github-square" aria-hidden="true" aria-setsize="100px"></i>
+                <i id="github" class="fa fa-github-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
             </a>
             <a href="mailto:nbabha@gmail.com">
-                <i class="fa fa-envelope-square" aria-hidden="true" aria-setsize="100px"></i>
+                <i class="fa fa-envelope-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
             </a>
         </div>
-        <div id="page-content">
-            <div id="about-me">
-                <img src="/images/chilling_in_chelan.jpg" id="main-image">
-                <div id="about-text">
-                    <h1>About Me</h1>
-                    <p>
-                        I am currently a data analyst at Vanguard, helping to improve our web and 
-                        mobile experiences through analysis and experimentation.
-                        <br>
-                        <br>
-                        I am looking to make the transition back into software engineering.
-                    </p>
-                    <div id="read-more__container">
-                        <h2>
-                            <a id="read-more__nav" href="#projects-container">View Projects <span id="down_arrow">&#8595</span></a>
-                        </h2>
+            <div id="about-container">
+                <img src="/images/chilling_in_chelan.jpg" id="about-image">
+                <div id="about-text__outer">
+                    <div id="about-text__inner">
+                        <h2>About Me</h2>
+                        <p>
+                            As a data analyst at Vanguard, I help to improve our web and 
+                            mobile experiences through analysis and experimentation.<br><br>
+                            Currently, I am looking to make the transition back into software engineering.
+                            Check out some of the projects I've been working on below!
+                        </p>
+                        <h3><a class="text-theme smooth-scroll" href="#projects-container">View Projects <span id="down_arrow">&#8595</span></a></h3>
                     </div>
                 </div>
             </div>
             <div id="projects-container">
-                <p class="title">Projects</p>
+                <h1 class="text-centered">Projects</h1>
                 <div id="projects"></div>
             </div>
-        </div>
     </body>
     <script type="module" src="index.js"></script>
 </html>
