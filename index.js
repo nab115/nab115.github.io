@@ -38,6 +38,14 @@ async function initial_jiggle() {
 
 function fillProjects() {
     projects.forEach((p) => {
+        
+        var readmore_html = "";
+        var image_html = `<div class=project-image-container><img src=${p["image"]}></div>`
+        if (p.hasOwnProperty('readmore')) {
+            readmore_html = `<a class="text-blue" href=${p["readmore"]}>Read More &#8594</a></p>`
+            image_html = `<div class=project-image-container><a href=${p["readmore"]}><img src=${p["image"]}></a></div>`
+        }
+
         $('#projects').append(`
             <div class="project-container">
                 <div class="project-info__outer">
@@ -46,11 +54,11 @@ function fillProjects() {
                         <p>${p["description"]}</p>
                         <div class="project-links">
                             <p><a class="text-blue" href=${p["code"]}>View the code</a>
-                            <a class="text-blue" href=${p["readmore"]}>Read More &#8594</a></p>
+                            ${readmore_html}
                         </div>
                     </div>
                 </div>
-                <div class=project-image-container><img src=${p["image"]}></div>
+                ${image_html}
             </div>
             `
         );
