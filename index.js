@@ -49,7 +49,7 @@ function fillProjects() {
         $('#projects').append(`
             <div class="project-container">
                 <div class="project-info__outer">
-                    <div class="project-info__inner">
+                    <div class="project-info__inner inner">
                         <p class="project-title">${p["title"]}</p>
                         <p>${p["description"]}</p>
                         <div class="project-links">

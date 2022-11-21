@@ -12,6 +12,7 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: 700;
+    margin: 0px;
 }
 
 h3 {
@@ -30,4 +31,19 @@ p { font-size: 20px; }
 .text-centered {
     text-align: center;
     position: relative;
+}
+
+.inner {
+    /* 
+        These settings allow for inner div to be 100% height of outer INCLUDING inner's margins 
+        reference : https://stackoverflow.com/questions/485827/css-100-height-with-padding-margin
+        Reading http://cssdesignpatterns.com/ would be useful to advance my CSS and HTML
+    */
+    display: block;
+    height: auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    position: absolute;
 }

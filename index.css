@@ -41,16 +41,15 @@ body { margin: 0px; }
 }
 
 #about-text__inner {
+    text-align: left;
     margin-left: 40px;
     margin-right: 40px;
-    text-align: left;
-    position: relative;
-    height: 100%;
+    margin-top: 40px;
 }
 
 #about-text__inner h3 {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
 }
 
 #down_arrow {
@@ -84,12 +83,14 @@ body { margin: 0px; }
 .project-info__inner {
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 25px;
     text-align: left;
 }
 
 .project-title {
     font-size: 35px;
     font-weight: 600;
+    margin: 0px;
 }
 
 .project-image-container {
