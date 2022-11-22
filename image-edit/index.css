@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(235, 239, 243);
+}
+
+h1 {
+    pointer-events: none;
+}
+
+#page-content {
+    margin: auto;
+    margin-top: 25px;
+    padding: 25px;
+    width: 800px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    line-height: 1.9em;
+}
+
+#video-container {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#video-container video {
+    width : 100%;
+}
+
+#home__nav {
+    top: 0px;
+    position: fixed;
+    font-size: 25px;
+}

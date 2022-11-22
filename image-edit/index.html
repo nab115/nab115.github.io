@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<script src="../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../libs/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+<html>
+    <head>
+        <title>Image Edit Project</title>
+    </head>
+    <h1 class="text-centered">Image Edit</h1>
+    <p class="text-centered"><a href="https://github.com/nab115/image-edit" class="text-theme">View the code</a></p>
+    <div id="page-content">
+        <h2>Demo Video</h2>
+        <div id="video-container">
+            <video controls>
+                <source src="../media/image-edit-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> 
+        </div>
+        <h2>Description</h2>
+        <p>
+            Image-Edit (as the name suggests) is an image editing web application built in Spring using 
+            Spring Boot and Spring MVC.
+        </p>
+        <p>
+            The purpose of this project was to begin learning the Spring framework and to challenge myself to take an
+            idea and some requirements and build out a functional web application. With Image-Edit, a user can upload
+            a JPEG image, crop it, and convert it to greyscale. The editing features are custom-built. For example, 
+            I created draggable crop-lines using JavaScript which are limited to the bounds of the image and to eachothers
+            opposing crop-line (e.g. the top line cannot be dragged above the top of the image or below where the bottom
+            line has been placed). The Crop and Greyscale buttons are powered by POST requests to the server which pass the
+            relevant data (i.e. crop line locations relative to the image bounds) and recieve back the edited image.
+        </p>
+        <p>
+            The image itsef is stored in memory inside a bean with singleton scope. I wrote a Java class to create this bean,
+            which uses BufferedImage objects as class instances to hold the original image and the edited image. This class has
+            instance methods to take in the input from the POST requests and edit the image. The BufferedImage representation 
+            of the transformed JPED is then converted to a Base64 string which is inserted into the img src inside of the HTML 
+            template using ThymeLeaf, so it can be displayed to the user.
+        </p>
+    </div>
+    </body>
+    <p><a class="text-theme" id="home__nav" href="../">&#8592 Home</a></p>
+</html>

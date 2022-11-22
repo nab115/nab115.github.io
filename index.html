@@ -8,22 +8,23 @@
         <title>Naran Babha</title>
     </head>
     <body>
-        <h1 class="text-white text-centered">Naran Babha</h1>
-        <div class="text-centered" id="contact">
-            <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
-                <i id="linkedin" class="fa fa-linkedin-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
-            </a>
-            <a href="https://github.com/nab115/" style="text-decoration:none">
-                <i id="github" class="fa fa-github-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
-            </a>
-            <a href="mailto:nbabha@gmail.com">
-                <i class="fa fa-envelope-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
-            </a>
-        </div>
+        <div id="home-container">
+            <h1 class="text-white text-centered">Naran Babha</h1>
+            <div class="text-centered" id="contact">
+                <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
+                    <i id="linkedin" class="fa fa-linkedin-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
+                </a>
+                <a href="https://github.com/nab115/" style="text-decoration:none">
+                    <i id="github" class="fa fa-github-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
+                </a>
+                <a href="mailto:nbabha@gmail.com">
+                    <i class="fa fa-envelope-square contact-btn text-white" aria-hidden="true" aria-setsize="100px"></i>
+                </a>
+            </div>
             <div id="about-container">
-                <img src="/images/chilling_in_chelan.jpg" id="about-image">
+                <img src="/media/chilling_in_chelan.jpg" id="about-image">
                 <div id="about-text__outer">
-                    <div id="about-text__inner">
+                    <div class="inner" id="about-text__inner">
                         <h2>About Me</h2>
                         <p>
                             As a data analyst at Vanguard, I help to improve our web and 
@@ -35,10 +36,11 @@
                     </div>
                 </div>
             </div>
-            <div id="projects-container">
-                <h1 class="text-centered">Projects</h1>
-                <div id="projects"></div>
-            </div>
+        </div>
+        <div id="projects-container">
+            <h1 class="text-centered">Projects</h1>
+            <div id="projects"></div>
+        </div>
     </body>
     <script type="module" src="index.js"></script>
 </html>
