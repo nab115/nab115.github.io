@@ -18,7 +18,7 @@ body { margin: 0px; }
 
 #about-container{
     border: white 10px solid;
-    width: 1200px;
+    width: 1150px;
     height: 500px;
     position: relative;
     margin: auto;
@@ -28,7 +28,7 @@ body { margin: 0px; }
 
 #about-image {
     height: 500px;
-    width: 48%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -36,7 +36,7 @@ body { margin: 0px; }
     /* float: right; */
     display: inline-block;
     position: absolute;
-    width: 52%;
+    width: 50%;
     height: 500px;
 }
 
