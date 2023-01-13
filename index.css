@@ -18,8 +18,8 @@ body { margin: 0px; }
 
 #about-container{
     border: white 10px solid;
-    width: 1000px;
-    height: 450px;
+    width: 1200px;
+    height: 500px;
     position: relative;
     margin: auto;
     margin-top: 50px;
@@ -27,8 +27,8 @@ body { margin: 0px; }
 }
 
 #about-image {
-    height: 450px;
-    width: 50%;
+    height: 500px;
+    width: 48%;
     display: inline-block;
 }
 
@@ -36,20 +36,24 @@ body { margin: 0px; }
     /* float: right; */
     display: inline-block;
     position: absolute;
-    width: 50%;
-    height: 450px;
+    width: 52%;
+    height: 500px;
 }
 
 #about-text__inner {
     text-align: left;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 #about-text__inner h3 {
     position: absolute;
     bottom: 40px;
+}
+
+#about-text__inner p {
+    font-size: 18px;
 }
 
 #down_arrow {
