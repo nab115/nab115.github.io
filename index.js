@@ -6,6 +6,8 @@ $(document).ready(function() {
     fillProjects();
 });
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 function jiggle(ob, pix, duration) {
     ob.animate({bottom: "+=" + pix + "px"}, duration);
     return ob.animate({bottom: "-=" + pix + "px"}, duration).promise();
@@ -52,18 +54,14 @@ function fillProjects() {
     });
 }
 
-$("#contact a").hover(
-    function() {
-        jiggle($(this).children("i").eq(0), 15, 200);
-    }
+$("#contact a").hover(({currentTarget}) => jiggle($(currentTarget).children("i").eq(0), 15, 200)
     // do nothing on mouse leaving the element
-    , function() {
-    }
+    , () => {}
 );
 
-$(".smooth-scroll").click(
-    function(e) {
+$(".smooth-scroll").click((e) => {
         e.preventDefault();
-        document.getElementById($(this).attr('href')).scrollIntoView({behavior: 'smooth'});
+        var target = e.currentTarget.getAttribute("href");
+        document.getElementById(target).scrollIntoView({behavior: 'smooth'});
     }
 )
