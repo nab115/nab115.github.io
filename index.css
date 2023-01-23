@@ -12,8 +12,8 @@ body { margin: 0px; }
 
 #home-container {
     width: 100%;
-    min-height: calc(100vh - 25px);
-    padding-bottom: 25px;
+    min-height: 80vh;
+    padding-bottom: 20vh;
 }
 
 #about-container{
