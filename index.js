@@ -19,9 +19,11 @@ async function bounce(ob, pix, duration) {
 }
 
 async function initial_jiggle() {
-    for(var i = 0; i < $("#contact").children("a").length; i++) {
+
+    var icons = $("#contact").children("a");
+    for(var i = 0; i < icons.length; i++) {
         await sleep(100);
-        jiggle($("#contact").children("a").eq(i).children("i").eq(0), 15, 200);
+        jiggle(icons.eq(i).children("i").eq(0), 15, 200);
     }
 }
 
