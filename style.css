@@ -1,6 +1,7 @@
 html { 
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(54, 69, 79);
+    min-width: 500px;
 }
 
 h1 {
@@ -46,5 +47,5 @@ p { font-size: 20px; }
     top:0;
     left:0;
     right:0;
-    position: absolute;
+    /* position: absolute; */
 }
