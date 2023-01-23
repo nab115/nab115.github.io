@@ -1,9 +1,9 @@
-import projects from '/projects.json' assert {type: 'json'};
-
-$(document).ready(function() {
+$(document).ready(async function() {
+    const res = await fetch("/projects.json");
+    const projects = await res.json();
     initial_jiggle();
     bounce($("#down_arrow"), 15, 750);
-    fillProjects();
+    fillProjects(projects);
 });
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -27,9 +27,10 @@ async function initial_jiggle() {
     }
 }
 
-function fillProjects() {
+async function fillProjects(projects) {
+    console.log("attempting to fill projects . . .");
+
     projects.forEach((p) => {
-        
         var readmore_html = "";
         var image_html = `<div class=project-image-container><img src=${p["image"]}></div>`
         if (p.hasOwnProperty('readmore')) {
