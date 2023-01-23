@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+    .project-image-container {
+        display: none;
+    }
+
+    .project-info__outer {
+        width: 100%;
+    }
+
+    #about-image {
+        width: 100vw;
+    }
+
+    #about-text__outer {
+        width: 100vw;
+        aspect-ratio: unset;
+    }
+}
