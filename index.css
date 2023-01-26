@@ -44,14 +44,6 @@ body { margin: 0px; }
     background-color: rgb(235, 239, 243);
 }
 
-#about-text__inner {
-    text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
 #about-text__inner p {
     font-size: 18px;
 }
@@ -83,14 +75,6 @@ body { margin: 0px; }
     height: 100%;
     float: left;
     position: relative;
-}
-
-.project-info__inner {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    text-align: left;
 }
 
 .project-title {
