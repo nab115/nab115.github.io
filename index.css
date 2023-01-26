@@ -44,10 +44,6 @@ body { margin: 0px; }
     background-color: rgb(235, 239, 243);
 }
 
-#about-text__inner p {
-    font-size: 18px;
-}
-
 #down_arrow {
     /* relative positioning to bounce arrow */
     position: relative;

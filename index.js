@@ -42,7 +42,7 @@ async function fillProjects(projects) {
             <div class="project-container">
                 <div class="project-info__outer">
                     <div class="inner">
-                        <p class="project-title">${p["title"]}</p>
+                        <h3>${p["title"]}</h3>
                         <p>${p["description"]}</p>
                         <div class="project-links">
                             <p><a class="text-blue" href=${p["code"]}>View the code</a>
