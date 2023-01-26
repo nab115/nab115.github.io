@@ -1,6 +1,7 @@
 @media screen and (max-width: 1024px) {
    .project-container {
         width: 90vw;
+        aspect-ratio: unset;
    } 
     
     .project-image-container {
@@ -9,6 +10,11 @@
 
     .project-info__outer {
         width: 100%;
+        float: unset;
+    }
+
+    .project-links {
+        position : relative;
     }
 
     #about-image { 
