@@ -41,7 +41,7 @@ async function fillProjects(projects) {
         $('#projects').append(`
             <div class="project-container">
                 <div class="project-info__outer">
-                    <div class="project-info__inner inner">
+                    <div class="inner">
                         <p class="project-title">${p["title"]}</p>
                         <p>${p["description"]}</p>
                         <div class="project-links">

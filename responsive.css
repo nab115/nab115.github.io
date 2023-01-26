@@ -10,7 +10,8 @@
 
     .project-info__outer {
         width: 100%;
-        float: unset;
+        float: none;
+        display: inline-block;
     }
 
     .project-links {

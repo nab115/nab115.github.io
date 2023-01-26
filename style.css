@@ -2,7 +2,6 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(54, 69, 79);
     max-width: 100%;
-
 }
 
 body {
@@ -42,16 +41,6 @@ p { font-size: 20px; }
 }
 
 .inner {
-    /* 
-        These settings allow for inner div to be 100% height of outer INCLUDING inner's margins 
-        reference : https://stackoverflow.com/questions/485827/css-100-height-with-padding-margin
-        Reading http://cssdesignpatterns.com/ would be useful to advance my CSS and HTML
-    */
-    display: block;
-    height: auto;
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
-    /* position: absolute; */
+    text-align: left;
+    margin: 25px 40px;
 }
