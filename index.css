@@ -29,8 +29,8 @@ body { margin: 0px; }
 
 #about-image {
     aspect-ratio: 1 / 1;
-    width: 30vw;
-    min-width: 500px;
+    width: 35em;
+    max-width: 50%;
     display: inline-block;
     vertical-align: top;
 }
@@ -39,8 +39,8 @@ body { margin: 0px; }
     display: inline-block;
     vertical-align: top;
     aspect-ratio: 1 / 1;
-    width: 30vw;
-    min-width: 500px;
+    width: 35em;
+    max-width: 50%;
     background-color: rgb(235, 239, 243);
 }
 

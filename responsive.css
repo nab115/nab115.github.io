@@ -13,10 +13,12 @@
 
     #about-image { 
         width: 100vw;
+        max-width: none;
     }
 
     #about-text__outer {
         width: 100vw;
+        max-width: none;
         aspect-ratio: unset;
     }
 
