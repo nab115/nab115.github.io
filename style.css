@@ -1,7 +1,14 @@
 html { 
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(54, 69, 79);
-    min-width: 500px;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {

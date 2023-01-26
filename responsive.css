@@ -11,7 +11,7 @@
         width: 100%;
     }
 
-    #about-image {
+    #about-image { 
         width: 100vw;
     }
 
@@ -19,4 +19,13 @@
         width: 100vw;
         aspect-ratio: unset;
     }
+
+    #page-content {
+        width: 75%;
+    }
+
+    #home__nav {
+        font-size: 18px;
+    }
+
 }
