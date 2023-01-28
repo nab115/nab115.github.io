@@ -1,5 +1,22 @@
+@media screen AND (max-width: 500px) {
+    #name, #contact {
+        display: inline;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+    .contact-btn {
+        font-size: 30px;
+    }
+
+    #header-container {
+        margin: 10px 0px 5px 20px
+    }
+}
+
 @media screen and (max-width: 1024px) {
-   .project-container {
+   
+    .project-container {
         width: 90vw;
         aspect-ratio: unset;
    } 
