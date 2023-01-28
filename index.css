@@ -3,6 +3,10 @@ html { background-color:rgb(18, 50, 67); }
 /* ensure html background color doesn't show in projects section */
 body { margin: 0px; }
 
+#header-container {
+    margin: 25px 0px;
+}
+
 .contact-btn {
     /* relative positioning to jiggle icons */
     position: relative;
@@ -23,7 +27,6 @@ body { margin: 0px; }
     height: 500px; */
     position: relative;
     margin: auto;
-    margin-top: 50px;
     text-align: center;
 }
 
