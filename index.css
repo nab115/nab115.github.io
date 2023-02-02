@@ -38,6 +38,17 @@ body { margin: 0px; }
     vertical-align: top;
 }
 
+.mode {
+    width: 20%;
+    min-width: 100px;
+    --button-color: #537bf1;
+    border: 2px solid var(--button-color);
+}
+
+.mode.selected, .mode:hover {
+    background-color: var(--button-color);
+}
+
 #about-text__outer {
     display: inline-block;
     vertical-align: top;

@@ -30,16 +30,11 @@
                 ><div id="about-text__outer">
                     <div class="inner" id="about-text__inner">
                         <h2>About Me</h2>
-                        <p>
-                            For the past four years I worked at Vanguard, first as a member of their Technology 
-                            Leadership Program, where I rotated through various business lines and gained experience 
-                            in cloud engineering, software development, and analytics. I then joined their User 
-                            Experience department as a Data Analyst, where I helped to improve their web and mobile 
-                            experiences through analysis and experimentation.
-                            <br><br>
-                            I recently rediscovered my passion for coding and am looking to make the transition back 
-                            into software engineering. Check out some of the projects I've been working on below!
-                        </p>
+                        <div id="mode-switch">
+                            <button class="text-theme mode" id="personal">Personal</button> 
+                            <button class="text-theme mode selected" id="professional">Professional</button>
+                        </div>
+                        <p id="about-text-content"></p>
                         <h3><a class="text-theme smooth-scroll" href="projects-container">View Projects <span id="down_arrow">&#8595</span></a></h3>
                     </div>
                 </div>
@@ -51,4 +46,5 @@
         </div>
     </body>
     <script type="module" src="index.js"></script>
+    <script type="module" src="listeners.js"></script>
 </html>
