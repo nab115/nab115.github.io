@@ -1,6 +1,14 @@
 [
     {
-        "title" : "Image Editor"
+        "title" : "Food Finder App"
+        , "description" : "Website for finding restaurants with a certain menu item, for when you’re craving something specific. Built in React and Express.js, utilizing MongoDB for restaurant menu item data storage. (Still under development)"
+        , "code" : "https://github.com/nab115/food-finder-app"
+        , "link" : "https://food-finder-app-production.up.railway.app"
+        , "image" : "/media/food-finder.png"
+    }
+    
+    , {
+        "title" : "Image Edit"
         , "description" : "Image editing web application with custom-made cropping and greyscale functionality. Built in Spring leveraging Spring Boot and Spring MVC."
         , "code" : "https://github.com/nab115/image-edit"
         , "readmore" : "/image-edit"
