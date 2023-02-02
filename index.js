@@ -28,14 +28,18 @@ async function initial_jiggle() {
 }
 
 async function fillProjects(projects) {
-    console.log("attempting to fill projects . . .");
 
     projects.forEach((p) => {
         var readmore_html = "";
+        var link_html = "";
         var image_html = `<div class=project-image-container><img src=${p["image"]}></div>`
         if (p.hasOwnProperty('readmore')) {
             readmore_html = `<a class="text-blue" href=${p["readmore"]}>Read More &#8594</a></p>`
             image_html = `<div class=project-image-container><a href=${p["readmore"]}><img src=${p["image"]}></a></div>`
+        }
+        if (p.hasOwnProperty('link')) {
+            link_html = `<a class="text-blue" href=${p["link"]}>Try it out &#8594</a></p>`
+            image_html = `<div class=project-image-container><a href=${p["link"]}><img src=${p["image"]}></a></div>`
         }
 
         $('#projects').append(`
@@ -47,6 +51,7 @@ async function fillProjects(projects) {
                         <div class="project-links">
                             <p><a class="text-blue" href=${p["code"]}>View the code</a>
                             ${readmore_html}
+                            ${link_html}
                         </div>
                     </div>
                 </div>
