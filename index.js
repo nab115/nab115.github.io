@@ -1,10 +1,11 @@
-import {fillProjects} from './projects.js'
+import {fillProjects, fillAboutMe} from './content.js'
 import {jiggle, bounce} from './animation.js'
 
 $(function() {
     initial_jiggle();
     bounce($("#down_arrow"), 15, 750);
     fillProjects();
+    fillAboutMe('professional');
 });
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
