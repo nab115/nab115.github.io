@@ -50,6 +50,10 @@ body { margin: 0px; }
     color: white;
 }
 
+.mode.selected {
+    pointer-events: none;
+}
+
 #about-text__outer {
     display: inline-block;
     vertical-align: top;
