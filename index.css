@@ -10,7 +10,7 @@ body { margin: 0px; }
 .contact-btn {
     /* relative positioning to jiggle icons */
     position: relative;
-    padding-right: 8px;
+    padding-right: 0.1em;
     font-size: 50px;
 }
 
@@ -47,6 +47,7 @@ body { margin: 0px; }
 
 .mode.selected, .mode:hover {
     background-color: var(--button-color);
+    color: white;
 }
 
 #about-text__outer {
