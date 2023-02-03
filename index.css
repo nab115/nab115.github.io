@@ -47,6 +47,7 @@ body { margin: 0px; }
 
 .mode.selected, .mode:hover {
     background-color: var(--button-color);
+    color: white;
 }
 
 #about-text__outer {
