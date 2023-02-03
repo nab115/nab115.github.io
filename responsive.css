@@ -1,8 +1,20 @@
 @media screen AND (max-width: 500px) {
     #name, #contact {
-        display: inline;
-        margin-right: 10px;
         font-size: 30px;
+    }
+
+    #contact {
+        text-align: right;
+    }
+
+    #name {
+        text-align: left;
+        margin-left: 0.1em;
+    }
+
+    #name-container, #contact {
+        display: inline-block;
+        width: 49%;
     }
 
     .contact-btn {
@@ -10,7 +22,7 @@
     }
 
     #header-container {
-        margin: 10px 0px 5px 20px
+        margin: 8px 0px 0px 0px;
     }
 }
 
