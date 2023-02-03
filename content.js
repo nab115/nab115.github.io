@@ -45,15 +45,21 @@ export function fillAboutMe(mode) {
     <br><br>
     After a few years working in Vanguard's User Experience division as a data analyst, I am looking to transition 
     back into software engineering. I recently have been working on various personal projects,
-    using these to learn new technologies such as React, Express.js, Spring Boot and MongoDB. I am interested in a 
-    back-end or full stack role where I can solve challenging problems and continue to develop my skills.
+    using these to learn new technologies such as 
+    <a href="https://reactjs.org/">React</a>, 
+    <a href="https://expressjs.com/">Express.js</a>, 
+    <a href="https://spring.io/">Spring</a>
+    and <a href="https://www.mongodb.com/">MongoDB</a>. 
+    
+    I am interested in a back-end or full stack role where I can solve 
+    challenging problems and continue to develop my skills.
     ` 
 
     var personal_html = 
     `
     I was born and raised in Rochester, NY, home of the incredible 
-    <a href="https://thetakeout.com/the-garbage-plate-is-peak-cuisine-1848764198">garbage plate<a>. I stayed on the east
-    coast for college and later work, however I recently relocated to Seattle, WA to move in with my partner who is
+    <a href="https://thetakeout.com/the-garbage-plate-is-peak-cuisine-1848764198">garbage plate</a>. I stayed on the
+    east coast for college and later work, however I recently relocated to Seattle, WA to move in with my partner who is
     a medical resident at the University of Washington.
     <br><br>
     In my free time I enjoy cooking, weightlifting and playing video games like Rocket League, Valorant and online Chess.

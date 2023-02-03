@@ -19,6 +19,7 @@
 
     .contact-btn {
         font-size: 30px;
+        padding-right: 0em !important;
     }
 
     #header-container {
@@ -67,7 +68,7 @@
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     h2 {
@@ -78,6 +79,10 @@
         font-size: 25px;
         font-weight: 700;
         margin: 0px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
 }
