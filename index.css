@@ -18,6 +18,7 @@ body { margin: 0px; }
     width: 100%;
     min-height: 80vh;
     padding-bottom: 20vh;
+    --highlight-color: #537bf1;
 }
 
 #about-container{
@@ -41,12 +42,11 @@ body { margin: 0px; }
 .mode {
     width: 20%;
     min-width: 100px;
-    --button-color: #537bf1;
-    border: 2px solid var(--button-color);
+    border: 2px solid var(--highlight-color);
 }
 
 .mode.selected, .mode:hover {
-    background-color: var(--button-color);
+    background-color: var(--highlight-color);
     color: white;
 }
 

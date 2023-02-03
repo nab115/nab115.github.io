@@ -31,6 +31,11 @@ p {
     font-size: 18px; 
 }
 
+a {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
 .text-white { color: white }
 
 .text-theme { color : rgb(54, 69, 79);}
