@@ -2,7 +2,7 @@
     {
         "title" : "menuMonster"
         , "description" : "Website for finding restaurants with a certain menu item, for when you’re craving something specific. Built in React and Express.js, utilizing MongoDB for restaurant menu item data storage. (Still under development)"
-        , "code" : "https://github.com/nab115/food-finder-app"
+        , "code" : "https://github.com/nab115/menu-monster"
         , "link" : "https://www.menu-monster.com"
         , "image" : "/media/menu-monster.png"
     }
