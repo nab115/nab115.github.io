@@ -27,12 +27,6 @@ body { margin: 0px; }
     --highlight-color: #537bf1;
 }
 
-#about-container{
-    position: relative;
-    margin: auto;
-    text-align: center;
-}
-
 .mode {
     width: 20%;
     min-width: 100px;
@@ -48,12 +42,14 @@ body { margin: 0px; }
     pointer-events: none;
 }
 
-#about-text__outer {
-    display: inline-block;
+#about-container {
     vertical-align: top;
-    aspect-ratio: 1 / 1;
     width: 35em;
+    max-width: 100%;
     background-color: rgb(235, 239, 243);
+    padding: 25px 40px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 #down_arrow {

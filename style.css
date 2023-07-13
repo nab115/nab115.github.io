@@ -52,7 +52,7 @@ a {
     position: relative;
 }
 
-.inner {
+.text-left {
     text-align: left;
-    margin: 25px 40px;
+    position: relative;
 }
