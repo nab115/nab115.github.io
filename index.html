@@ -10,26 +10,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
+        <div class="nav-container text-right">
+            <a class="nav-btn" href="/" style="text-decoration:none">Home</a>
+            <a class="nav-btn" href="/projects" style="text-decoration:none">Projects</a>
+        </div>
         <div id="home-container">
             <div id="header-container">
                 <div id="name-container">
-                    <h1 id="name" class="text-white text-centered">Naran Babha</h1>
+                    <h1 id="name" class="text-centered">Naran Babha</h1>
                 </div
                 ><div class="text-centered" id="contact">
                     <a href="https://www.linkedin.com/in/naranbabha/" style="text-decoration:none">
-                        <i id="linkedin" class="fa fa-linkedin-square contact-btn text-white"></i>
+                        <i id="linkedin" class="fa fa-linkedin-square contact-btn text-theme"></i>
                     </a>
                     <a href="https://github.com/nab115/" style="text-decoration:none">
-                        <i id="github" class="fa fa-github-square contact-btn text-white"></i>
+                        <i id="github" class="fa fa-github-square contact-btn text-theme"></i>
                     </a>
                     <a href="mailto:nbabha@gmail.com">
-                        <i class="fa fa-envelope-square contact-btn text-white"></i>
+                        <i class="fa fa-envelope-square contact-btn text-theme"></i>
                     </a>
                 </div>
             </div>
             <div id="about-container">
-                <img id="about-image" src="/media/chilling_in_chelan.jpg"
-                ><div id="about-text__outer">
+                <div id="about-text__outer">
                     <div class="inner" id="about-text__inner">
                         <h2>About Me</h2>
                         <div id="mode-switch">
@@ -37,14 +40,9 @@
                             <button class="text-theme mode selected" id="professional">Professional</button>
                         </div>
                         <p id="about-text-content"></p>
-                        <h3><a class="text-theme smooth-scroll" href="projects-container">View Projects <span id="down_arrow">&#8595</span></a></h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="projects-container">
-            <h1 class="text-centered">Projects</h1>
-            <div id="projects"></div>
         </div>
     </body>
     <script type="module" src="index.js"></script>

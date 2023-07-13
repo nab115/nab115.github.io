@@ -1,10 +1,19 @@
-html { background-color:rgb(18, 50, 67); }
+html { background-color: rgb(235, 239, 243); }
 
 /* ensure html background color doesn't show in projects section */
 body { margin: 0px; }
 
+.nav-container {
+    padding-right: 5em;
+    padding-top: 1em;
+}
+
+.nav-btn {
+    padding-right: .5em;
+}
+
 #header-container {
-    margin: 25px 0px;
+    margin-bottom: 25px;
 }
 
 .contact-btn {
@@ -15,28 +24,13 @@ body { margin: 0px; }
 }
 
 #home-container {
-    width: 100%;
-    min-height: 80vh;
-    padding-bottom: 20vh;
     --highlight-color: #537bf1;
 }
 
 #about-container{
-    /* border: white 10px solid; */
-    /* width: 1150px;
-    min-width: 1150px;
-    height: 500px; */
     position: relative;
     margin: auto;
     text-align: center;
-}
-
-#about-image {
-    aspect-ratio: 1 / 1;
-    width: 35em;
-    max-width: 50%;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .mode {
@@ -59,7 +53,6 @@ body { margin: 0px; }
     vertical-align: top;
     aspect-ratio: 1 / 1;
     width: 35em;
-    max-width: 50%;
     background-color: rgb(235, 239, 243);
 }
 
@@ -70,7 +63,6 @@ body { margin: 0px; }
 
 #projects-container {
     background-color: rgb(235, 239, 243);
-    min-height: 100vh;
     padding-bottom: 50px;
 }
 
