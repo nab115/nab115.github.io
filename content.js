@@ -53,7 +53,7 @@ export function fillAboutMe(mode) {
     I mostly work with Java, XML, and Jenkins.
     <br><br>
     In my free time I enjoy working on various personal projects,
-    using these to learn new technologies such as 
+    using these to learn technologies such as
     <a href="https://reactjs.org/">React</a>, 
     <a href="https://expressjs.com/">Express.js</a>, 
     <a href="https://spring.io/">Spring</a>
