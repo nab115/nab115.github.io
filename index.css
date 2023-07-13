@@ -68,7 +68,7 @@ body { margin: 0px; }
     max-width: 100%;
     background-color: white;
     margin : auto;
-    margin-top: 50px;
+    margin-top: 2em;
     position: relative;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -76,8 +76,10 @@ body { margin: 0px; }
 .project-info__outer {
     width: 50%;
     height: 100%;
+    padding: 1em;
     float: left;
     position: relative;
+    box-sizing: border-box;
 }
 
 .project-title {
