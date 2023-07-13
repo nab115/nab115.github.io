@@ -40,19 +40,24 @@ export function fillAboutMe(mode) {
     var professional_html = 
     `
     After graduating from the University of Pittsburgh with a B.S. in Computer Engineering, 
-    I joined Vanguard as a member of their Technology Leadership Development Program. Through that rotational
-    program I gained experience in software development, cloud engineering and data analytics.
+    I joined Vanguard's Technology Leadership Program (TLP), a rotational program through which 
+    I gained experience in software development, cloud engineering and data analytics.
     <br><br>
-    After a few years working in Vanguard's User Experience division as a data analyst, I am looking to transition 
-    back into software engineering. I recently have been working on various personal projects,
+    I launched out of TLP as a User Experience data analyst where the work centered mostly 
+    around SQL, data visualization and experimentation. After a few years as an anlyst, 
+    I realized how much I missed coding and made the transition back into software 
+    engineering. 
+    <br><br>
+    Currently, I am a Software Engineer at 3M working on the backend of their 
+    Natural Language Understanding product used to process medical documents. In this role
+    I mostly work with Java, XML, and Jenkins.
+    <br><br>
+    In my free time I enjoy working on various personal projects,
     using these to learn new technologies such as 
     <a href="https://reactjs.org/">React</a>, 
     <a href="https://expressjs.com/">Express.js</a>, 
     <a href="https://spring.io/">Spring</a>
-    and <a href="https://www.mongodb.com/">MongoDB</a>. 
-    
-    I am interested in a back-end or full stack role where I can solve 
-    challenging problems and continue to develop my skills.
+    and <a href="https://www.mongodb.com/">MongoDB</a>.
     ` 
 
     var personal_html = 

@@ -14,11 +14,4 @@
         , "readmore" : "/image-edit"
         , "image" : "/media/image-edit.png"
     }
-
-    , {
-        "title" : "This Website"
-        , "description" : "My personal website built with the goal of learning the basics of web development without the use of any frameworks - just HTML, CSS and JavaScript."
-        , "code" : "https://github.com/nab115/nab115.github.io"
-        , "image" : "/media/website.png"
-    }
 ]
